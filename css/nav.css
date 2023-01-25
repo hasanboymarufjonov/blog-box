@@ -1,0 +1,29 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #0088cc;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  float: left;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #04699c;
+}
+
+nav a:first-child {
+  margin-left: 10px;
+}
+nav a:last-child {
+  margin-right: 10px;
+}

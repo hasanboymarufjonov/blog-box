@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/log-in.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/ios-glyphs/90/null/api-settings.png"
+    />
+  </head>
+  <body>
+    <nav><a href="/index.html">🠔 All Posts</a></nav>
+
+    <div class="form-container">
+      <form id="user-login">
+        <h2 style="text-align: center">Log In</h2>
+
+        <div class="form-field">
+          <label>Email:</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label>Password:</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <button
+            id="login-btn"
+            type="submit"
+            style="background-color: #0088cc"
+          >
+            Log In
+          </button>
+        </div>
+      </form>
+      <div class="form-footer">
+        <div>
+          Don't have an account? <a href="/pages/sign-up.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    <footer>©️ Blog Mock API. 2023</footer>
+
+    <!-- <script src="/js/log-in.js"></script>-->
+    <script type="module" src="/js/usersLogin.js"></script>
+  </body>
+</html>

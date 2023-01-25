@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/sign-up.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/ios-glyphs/90/null/api-settings.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html">🠔 All Posts</a>
+    </nav>
+
+    <div class="form-container">
+      <form id="user-details">
+        <h2 style="text-align: center">Sign Up</h2>
+
+        <div class="form-field">
+          <label>Name:</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label>Email:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label>Password:</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <button
+            id="register-btn"
+            type="submit"
+            style="background-color: #0088cc"
+          >
+            Sign Up
+          </button>
+        </div>
+      </form>
+      <div class="form-footer">
+        <div>
+          Already have an account? <a href="/pages/log-in.html">Log in</a>
+        </div>
+      </div>
+    </div>
+    <footer>©️ Blog Mock API. 2023</footer>
+    <script type="module" src="/js/users.js"></script>
+  </body>
+</html>
