@@ -11,11 +11,14 @@ const check_log_password = localStorage.getItem("login_password");
 
 if ((check_log_email, check_log_password != null)) {
   toLogin.textContent = "Log out";
-  localStorage.removeItem("login_email");
-  localStorage.removeItem("login_password");
 }
 
-toLogin.addEventListener("click", function () {});
+toLogin.addEventListener("click", function () {
+  localStorage.removeItem("login_email");
+  localStorage.removeItem("login_password");
+  localStorage.removeItem("login_name");
+  localStorage.removeItem("login_avatar");
+});
 
 let posts = [];
 
@@ -39,49 +42,25 @@ function renderPosts(posts, parent = cardContainer) {
     const template = templateCard.cloneNode(true);
     template.setAttribute("id", `card-${post.id}`);
 
+    const avatar = domSelector(".avatar", template);
     const title = domSelector(".title", template);
     const author = domSelector(".author", template);
     const date = domSelector(".date", template);
     const description = domSelector(".description", template);
-    const image = domSelector("img", template);
+    const image = domSelector(".post-image", template);
 
     const convertedDate = convertDate(post.createdAt);
 
     title.textContent = post.title;
+    avatar.setAttribute("src", post.avatar);
     author.textContent = post.name;
+
     date.textContent = convertedDate;
     description.textContent = post.description;
-    // article.textContent = post.article;
     image.setAttribute("src", post.image);
-    // readMoreBtn.setAttribute("data-text", post.article);
 
-    const readMoreBtn = domSelector(".read-more-btn", template);
-    readMoreBtn.setAttribute("data-text", post.article);
-
-    // console.log(template);
     fragmentPost.appendChild(template);
   });
 
   parent.appendChild(fragmentPost);
 }
-
-// posts.forEach(function (post) {
-//   //...
-//   const readMoreBtn = domSelector(`#card-${post.id} .read-more-btn`);
-//   readMoreBtn.addEventListener("click", function (event) {
-//     var textData = post.article;
-//     alert(textData);
-//   });
-//   //...
-// });
-
-/*Modal.js*/
-
-// const readMoreBtns = document.querySelector(`#card-${post.id} .read-more-btn`);
-
-// readMoreBtns.addEventListener("click", function (event) {
-//   var textData = readMoreBtns.getAttribute("data-text");
-//   console.log(textData);
-// });
-
-/* Modal.js*/

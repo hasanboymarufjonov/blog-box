@@ -2,15 +2,19 @@ import { domSelector } from "../utils/domSelector.js";
 
 const postForm = domSelector("#post-form");
 
+const check_log_name = localStorage.getItem("login_name");
+const check_log_avatar = localStorage.getItem("login_avatar");
+
 let dateNow = new Date().toJSON().slice(0, 10);
 
 postForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const title = e.target.title.value;
-  const author = e.target.author.value;
+  const author = check_log_name;
   const description = e.target.description.value;
   const article = e.target.article.value;
+  const avatar = check_log_avatar;
   let image = e.target.image.value;
   let date = e.target.date.value;
 
@@ -28,6 +32,7 @@ postForm.addEventListener("submit", (e) => {
     name: author,
     image: image,
     article: article,
+    avatar: avatar,
     createdAt: date,
   };
 

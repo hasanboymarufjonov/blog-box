@@ -33,19 +33,28 @@ userLogin.addEventListener("submit", (e) => {
       if (emailUser != valid_email || passwordUser != valid_password) {
         function checkUser(email, password) {
           var user = usersData.find(function (user) {
-            return user.email === email && user.password === password;
+            if (user.email === email && user.password === password) {
+              return true;
+            }
           });
+
+          usersData.find(function (user) {
+            if (user.email === email && user.password === password) {
+              localStorage.setItem("login_email", emailUser);
+              localStorage.setItem("login_password", passwordUser);
+              localStorage.setItem("login_name", user.name);
+              localStorage.setItem("login_avatar", user.avatar);
+            }
+          });
+
           if (user == null) {
-            console.log("nope");
+            alert("Incorrect email or password");
           } else {
             console.log("yes");
             window.location = "/pages/new-post.html";
           }
         }
         checkUser(emailUser, passwordUser);
-
-        localStorage.setItem("login_email", emailUser);
-        localStorage.setItem("login_password", passwordUser);
 
         return false;
       } else {
