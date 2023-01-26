@@ -5,12 +5,14 @@ const cardContainer = domSelector(".card-container");
 const templateCard = domSelector(".card");
 
 const toLogin = domSelector("#login-signup");
+const noneDisplay = domSelector(".log-in");
 
 const check_log_email = localStorage.getItem("login_email");
 const check_log_password = localStorage.getItem("login_password");
 
 if ((check_log_email, check_log_password != null)) {
   toLogin.textContent = "Log out";
+  noneDisplay.display = "none";
 }
 
 toLogin.addEventListener("click", function () {

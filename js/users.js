@@ -13,9 +13,13 @@ userData.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const name = e.target.name.value;
-  const avatar = e.target.avatar.value;
+  let avatar = e.target.avatar.value;
   const email = e.target.email.value;
   const password = e.target.password.value;
+
+  if (avatar === "") {
+    avatar = "https://img.icons8.com/ios-filled/50/000000/user.png";
+  }
 
   localStorage.setItem("login_name", name);
   localStorage.setItem("login_avatar", avatar);

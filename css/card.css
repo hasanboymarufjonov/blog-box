@@ -12,22 +12,20 @@ body {
 }
 
 .card {
-  width: 502px;
+  width: 550px;
   margin: auto;
   background-color: white;
   border: 1px solid #d0d1d5;
   border-radius: 3px;
+  padding: 10px;
   margin-bottom: 10px;
-  padding: 12px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   /* box-shadow: 2px 2px 5px #ccc; */
 }
 
-.card img {
+.post-image {
   width: 100%;
   object-fit: cover;
-  padding: 0px;
-  margin: 0px;
 }
 
 .card-info {
@@ -39,7 +37,23 @@ body {
   font-weight: bold;
   margin-bottom: 5px;
 }
-
+.author-info {
+  padding: 10px;
+}
+.avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid #000;
+}
+.author {
+  float: left;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 10px;
+}
 .card-info .author {
   font-size: 14px;
   color: #555;

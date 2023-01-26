@@ -9,6 +9,7 @@ nav {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  width: auto;
 }
 
 nav a {
@@ -19,12 +20,45 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #04699c;
+  background-color: #093951;
 }
 
-nav a:first-child {
+nav > img {
+  width: 40px;
+  height: 40px;
   margin-left: 10px;
 }
-nav a:last-child {
-  margin-right: 10px;
+
+.log-in {
+  border: 1px solid #000;
+  border-radius: 200px;
+  background-color: #000;
+
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sign-up {
+  border: 1px solid #000;
+  border-radius: 200px;
+  background-color: #fff;
+  color: #000;
+  margin-left: 5px;
+
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
 }

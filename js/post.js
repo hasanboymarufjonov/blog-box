@@ -13,15 +13,15 @@ postForm.addEventListener("submit", (e) => {
   const title = e.target.title.value;
   const author = check_log_name;
   const description = e.target.description.value;
-  const article = e.target.article.value;
+  // const article = e.target.article.value;
   const avatar = check_log_avatar;
   let image = e.target.image.value;
   let date = e.target.date.value;
 
-  if (image === "") {
-    image =
-      "https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg?w=2000";
-  }
+  // if (image === "") {
+  //   image =
+  //     "https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg?w=2000";
+  // }
   if (date === "") {
     date = dateNow;
   }
@@ -31,7 +31,7 @@ postForm.addEventListener("submit", (e) => {
     description: description,
     name: author,
     image: image,
-    article: article,
+    // article: article,
     avatar: avatar,
     createdAt: date,
   };
