@@ -5,7 +5,8 @@ body {
 
 nav {
   /* background-color: #0088cc; */
-  background-color: #4267b2;
+  /* background-color: #4267b2; */
+  background-color: #fff;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -19,26 +20,37 @@ nav a {
   padding: 10px;
 }
 
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
 nav a:hover {
   background-color: #093951;
 }
+.links {
+  margin-left: 80px;
+}
+.links > a > img {
+  width: 38px;
+  margin: 0 20px;
+}
 
-nav > img {
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
+.buttons {
+  margin-top: 10px;
 }
 
 .log-in {
   border: 1px solid #000;
-  border-radius: 200px;
-  background-color: #000;
+  color: #fff;
+  background-color: #1b74e4;
 
   cursor: pointer;
   display: inline-block;
-  background: none;
   border: 1px solid #000;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 7px 16px;
   line-height: 1.2;
   text-align: center;
@@ -47,16 +59,16 @@ nav > img {
 
 .sign-up {
   border: 1px solid #000;
-  border-radius: 200px;
-  background-color: #fff;
+  border-radius: 10px;
   color: #000;
   margin-left: 5px;
+  background-color: #fff;
 
   cursor: pointer;
   display: inline-block;
   background: none;
   border: 1px solid #000;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 7px 16px;
   line-height: 1.2;
   text-align: center;
