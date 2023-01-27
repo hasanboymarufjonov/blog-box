@@ -27,9 +27,6 @@ nav a {
   margin-left: 15px;
 }
 
-nav a:hover {
-  background-color: #093951;
-}
 .links {
   margin-left: 80px;
 }
@@ -37,9 +34,16 @@ nav a:hover {
   width: 38px;
   margin: 0 20px;
 }
+#home-page:hover,
+#create-page:hover,
+#info-page:hover {
+  background-color: #eae6e6;
+  border-radius: 15px;
+}
 
 .buttons {
   margin-top: 10px;
+  margin-right: 10px;
 }
 
 .log-in {
@@ -73,4 +77,14 @@ nav a:hover {
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
+}
+
+.log-in:hover {
+  background-color: #fff;
+  color: #1b74e4;
+}
+
+.sign-up:hover {
+  background-color: #1b74e4;
+  color: #fff;
 }
