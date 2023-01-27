@@ -95,6 +95,12 @@ body {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .card {
+    width: 350px;
+  }
+}
+
 @media screen and (max-width: 378px) {
   .card {
     width: 328px;

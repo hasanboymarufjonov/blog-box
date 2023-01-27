@@ -88,3 +88,46 @@ nav a {
   background-color: #1b74e4;
   color: #fff;
 }
+
+@media screen and (max-width: 800px) {
+  .links {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .links > a > img {
+    width: 30px;
+    margin: 0px;
+  }
+
+  .logo {
+    margin-top: 6px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .log-in,
+  .sign-up {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .log-in,
+  .sign-up {
+    font-size: 10px;
+  }
+
+  .links > a > img {
+    width: 20px;
+    margin: 0px;
+  }
+  .buttons {
+    margin-top: 8px;
+  }
+}
