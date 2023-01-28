@@ -1,3 +1,7 @@
+body {
+  background: #e9ebee;
+}
+
 form {
   width: 80%;
   margin: 0 auto;
@@ -34,6 +38,7 @@ form textarea {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .form-field {
@@ -65,4 +70,8 @@ form textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
+}
+
+.signup-btn:hover {
+  background-color: #389a24;
 }

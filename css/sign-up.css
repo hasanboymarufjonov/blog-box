@@ -1,9 +1,18 @@
+body {
+  background: #e9ebee;
+}
+
+.form-container {
+  background-color: #fff;
+}
+
 form {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid #000;
+  border-bottom: 1px solid #000;
   padding: 10px;
   margin-top: 10px;
+  background-color: #fff;
 }
 
 form div {
@@ -42,4 +51,18 @@ form textarea {
 .form-footer {
   padding-top: 10px;
   text-align: center;
+}
+
+.signup-button {
+  color: #fff;
+  background-color: #42b72a;
+  width: 50%;
+  border: none;
+  margin: auto;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.signup-button:hover {
+  background-color: #49d02e;
 }
