@@ -16,7 +16,7 @@ postForm.addEventListener("submit", (e) => {
   // const article = e.target.article.value;
   const avatar = check_log_avatar;
   let image = e.target.image.value;
-  let date = e.target.date.value;
+  let date;
 
   // if (image === "") {
   //   image =

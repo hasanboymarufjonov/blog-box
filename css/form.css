@@ -1,9 +1,14 @@
+body {
+  background: #e9ebee;
+}
 form {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid #000;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #ccc;
+  border-radius: 5px;
 }
 
 form div {
@@ -11,6 +16,11 @@ form div {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 10px;
+}
+
+h2 {
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
 }
 
 form label {
@@ -26,6 +36,9 @@ form textarea {
   padding: 10px;
 }
 
+#description {
+  height: 100px;
+}
 form button[type="submit"] {
   width: 100%;
   padding: 10px;
@@ -34,6 +47,18 @@ form button[type="submit"] {
   text-align: center;
   box-shadow: 2px 2px 5px #ccc;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #0088cc;
+  box-shadow: 2px 2px 5px #ccc;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #04618f;
 }
 
 @media (max-width: 600px) {

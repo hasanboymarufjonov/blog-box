@@ -4,52 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BlogBox - create post</title>
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/form.css" />
     <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/nav-post.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://img.icons8.com/ios-glyphs/90/null/api-settings.png"
-    />
+    <link rel="icon" type="image/x-icon" href="/icons/B-logo.png" />
   </head>
   <body>
     <nav>
-      <a href="/index.html">🠔 All Posts</a>
-    </nav>
-
-    <form id="post-form">
-      <h2 style="text-align: center">New Post</h2>
-      <div>
-        <label for="image">Upload Image:</label>
-        <input type="name" id="image" name="image" />
+      <!-- <p
+        style="
+          color: #0088cc;
+          font-size: 30px;
+          margin: 0;
+          margin-top: 10px;
+          margin-left: 10px;
+          padding: 0px;
+        "
+      >
+        BlogBox
+      </p> -->
+      <img src="../icons/B-logo.png" class="logo" />
+      <div class="links">
+        <a href="/index.html" id="home-page"
+          ><img src="../icons/home-page-64.png" alt=""
+        /></a>
+        <a
+          href="/pages/new-post.html"
+          class="new-post nav-active"
+          id="create-page"
+          ><img src="../icons/create-64.png" alt=""
+        /></a>
+        <a href="/pages/info.html" id="info-page"
+          ><img src="../icons/info-64.png" alt=""
+        /></a>
       </div>
-      <div>
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" />
-      </div>
-
-      <div>
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" />
-      </div>
-      <div>
-        <label for="description">Post:</label>
-        <input type="text" id="description" name="description" />
-      </div>
-
-      <div>
-        <button
-          type="submit"
-          style="background-color: #0088cc; box-shadow: 2px 2px 5px #ccc"
+      <div class="buttons">
+        <a href="/pages/log-in.html" class="log-in">Log In</a>
+        <a href="/pages/sign-up.html" id="login-signup" class="sign-up"
+          >Sign Up</a
         >
-          Publish
-        </button>
+      </div>
+    </nav>
+    <form id="post-form">
+      <h2 style="text-align: center">Create post</h2>
+
+      <div>
+        <input
+          type="name"
+          id="image"
+          name="image"
+          placeholder="Add to your post image"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="What do you want to write about?"
+        />
+      </div>
+
+      <div>
+        <!-- <label for="description">Post:</label> -->
+        <textarea
+          type="text"
+          id="description"
+          name="description"
+          placeholder="What's on your mind?"
+          required
+        ></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Post</button>
       </div>
     </form>
+    <br />
     <footer>©️ Blog Mock API. 2023</footer>
     <script type="module" src="/js/post.js"></script>
     <script src="/js/check.js"></script>
+    <script
+      type="module"
+      src="/main.js
+    "
+    ></script>
   </body>
 </html>

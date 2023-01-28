@@ -1,0 +1,16 @@
+p {
+  background-color: #fff;
+  padding: 20px 50px;
+  margin: 50px 200px;
+  border-radius: 5px;
+}
+
+footer > p {
+  background-color: #e9ebee;
+}
+
+@media (max-width: 1000px) {
+  p {
+    margin: 10px;
+  }
+}

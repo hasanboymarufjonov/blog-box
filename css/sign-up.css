@@ -57,10 +57,11 @@ form textarea {
   color: #fff;
   background-color: #42b72a;
   width: 50%;
-  border: none;
   margin: auto;
   padding: 10px;
   font-weight: bold;
+  border: none;
+  border-radius: 5px;
 }
 
 .signup-button:hover {

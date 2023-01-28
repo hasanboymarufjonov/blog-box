@@ -31,12 +31,6 @@ nav a {
   margin: 0 20px;
 }
 
-#create-page:hover,
-#info-page:hover {
-  background-color: #eae6e6;
-  border-radius: 15px;
-}
-
 .nav-active {
   border-bottom: 5px solid #1b74e4;
 }
@@ -81,7 +75,7 @@ nav a {
 
 .log-in:hover {
   background-color: #fff;
-  color: #1b74e4;
+  color: #000;
 }
 
 .sign-up:hover {
