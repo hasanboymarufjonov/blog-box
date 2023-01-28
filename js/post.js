@@ -16,15 +16,12 @@ postForm.addEventListener("submit", (e) => {
   // const article = e.target.article.value;
   const avatar = check_log_avatar;
   let image = e.target.image.value;
-  let date;
+  let date = dateNow;
 
   // if (image === "") {
   //   image =
   //     "https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg?w=2000";
   // }
-  if (date === "") {
-    date = dateNow;
-  }
 
   const post = {
     title: title,
