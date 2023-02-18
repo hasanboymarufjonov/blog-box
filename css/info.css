@@ -1,8 +1,12 @@
-p {
+.box {
   background-color: #fff;
   padding: 20px 50px;
   margin: 50px 200px;
   border-radius: 5px;
+}
+
+span {
+  font-weight: bold;
 }
 
 footer > p {
