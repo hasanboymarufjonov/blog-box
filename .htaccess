@@ -1,0 +1,6 @@
+#remove html file extension https://blog-box.vercel.app/pages/info.html
+# to https://blog-box.vercel.app/pages/info
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
